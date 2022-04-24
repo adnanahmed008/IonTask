@@ -1,0 +1,7 @@
+{
+  "name": "IonTask",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
