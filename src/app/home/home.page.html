@@ -1,10 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-back-button></ion-back-button>
-    <ion-title>Home</ion-title>
+<ion-header class="box-shadow">
+
+  <!-- Search Toolbar -->
+  <ion-toolbar class="ion-no-padding">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
   </ion-toolbar>
+
+  <!-- Categories Toolbar -->
+  <ion-toolbar class="ion-no-padding reset-height">
+    <app-general-categories></app-general-categories>
+  </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
-
 </ion-content>

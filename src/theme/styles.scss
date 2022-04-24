@@ -1,0 +1,92 @@
+// #region | Border Radius |
+.border-radius-small {
+    border-radius: var(--ion-border-radius-s);
+}
+
+.border-radius {
+    border-radius: var(--ion-border-radius);
+}
+// #endregion
+
+// #region | Flex |
+.ion-flex {
+    display: flex;
+}
+// #endregion
+
+// #region | Padding |
+.ion-padding-horizontal-half {
+    padding-left: unset;
+    padding-inline-start: calc(var(--ion-padding) / 2);
+
+    padding-right: unset;
+    padding-inline-end: calc(var(--ion-padding) / 2);
+}
+
+.ion-padding-vertical-half {
+    --padding-top: calc(var(--ion-padding-vertical) / 2);
+    --padding-bottom: calc(var(--ion-padding-vertical) / 2);
+    padding-top: calc(var(--ion-padding-vertical) / 2);
+    padding-bottom: calc(var(--ion-padding-vertical) / 2);
+}
+// #endregion
+
+// #region | Horizontal Scroll |
+.horizontal-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    *:first-child {
+        width: fit-content;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+// #endregion
+
+// #region | Box Shadow |
+.box-shadow {
+    box-shadow: var(--ion-box-shadow) var(--ion-box-shadow-color);
+}
+// #endregion
+
+// #region | Toolbar |
+ion-toolbar {
+    --border-width: var(--ion-border-width);
+
+    &.reset-height {
+        --min-height: unset;
+    }
+}
+// #endregion
+
+// #region | Chip |
+ion-chip {
+    font-size: 13px;
+    padding: 7px 14px;
+
+    :host {
+    }
+    &.chip-outline {
+        border-width: var(--ion-border-width);
+    }
+}
+// #endregion
+
+// #region |  |
+// #endregion
+
+// #region |  |
+// #endregion
+
+// #region |  |
+// #endregion
+
+// #region |  |
+// #endregion
+
+// #region |  |
+// #endregion

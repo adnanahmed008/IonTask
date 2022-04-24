@@ -1,0 +1,9 @@
+:host {
+    ion-chip {
+        --color: var(--ion-color-gray-400);
+        
+        margin: unset;
+        margin-right: var(--ion-padding-vertical-half);
+        border-color: var(--ion-color-gray-400);
+    }
+}
