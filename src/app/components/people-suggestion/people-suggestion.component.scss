@@ -1,28 +1,3 @@
 :host {
-    .item-suggestion {
-        padding-top: var(--ion-padding);
-
-        &::part(native) {
-            --inner-padding-bottom: var(--ion-padding);
-        }
-
-        ion-avatar {
-            width: 37px;
-            height: 37px;
-            margin: unset;
-            margin-right: 18px;
-            border: var(--ion-border-width) solid var(--ion-color-gray-800);
-        }
-
-        .contents {
-        }
-
-        .text-name {
-            margin-bottom: 4px;
-        }
-
-        .icon-add-user {
-            font-size: 28px;
-        }
-    }
+    
 }

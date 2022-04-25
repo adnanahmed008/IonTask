@@ -57,6 +57,11 @@
     padding-right: unset;
     padding-inline-end: var(--ion-padding);
 }
+
+.ion-no-padding-bottom {
+    --padding-bottom: unset;
+    padding-bottom: unset;
+}
 // #endregion
 
 // #region | Margin |
