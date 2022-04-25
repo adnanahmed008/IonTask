@@ -2,20 +2,20 @@
 
   <ion-card-header class="ion-no-padding">
     <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end" lines="none" detail="false">
-      <h6 class="ion-card-heading">People you may know</h6>
+      <h6 class="ion-card-heading">Top 10 courses</h6>
     </ion-item>
   </ion-card-header>
 
   <ion-card-content class="ion-no-padding">
 
     <ion-list class="ion-border-bottom ion-last-item-full-border">
-      <app-suggested-user-item *ngFor="let user of users; index as i" [user]="user" 
-      [lines]="i == users.length - 1 ? 'full' : 'inset'" [canAdd]="true"></app-suggested-user-item>
+      <app-course-item *ngFor="let course of courses; index as i" [course]="course" 
+      [lines]="i == courses.length - 1 ? 'full' : 'inset'"></app-course-item>
     </ion-list>
 
     <div class="btn-see-more ion-flex ion-align-items-center ion-justify-content-center">
       <ion-button class="ion-no-margin ion-margin-vertical-half" color="transparent">
-        <ion-text class="ion-text-light" color="primary">See more</ion-text>
+        <ion-text class="ion-text-light" color="primary">See all</ion-text>
       </ion-button>
     </div>
 

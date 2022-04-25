@@ -2,7 +2,7 @@ import { Institute } from "./institute";
 
 export class User {
     name: string;
-    institue: Institute;
+    institute: Institute;
     profilePicture: string;
     mutualFriends: number;
 
@@ -12,7 +12,7 @@ export class User {
     }
 
     setInstitute(institue: Institute) {
-        this.institue = institue;
+        this.institute = institue;
         return this;
     }
 

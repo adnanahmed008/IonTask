@@ -1,12 +1,12 @@
 <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end item-user" button="true"
   detail="false" [lines]="lines">
 
-  <ion-avatar class="ion-align-self-start ion-flex ion-align-items-center ion-justify-content-center" slot="start">
+  <ion-avatar class="ion-align-self-start" slot="start">
     <ion-img [src]="user.profilePicture"></ion-img>
   </ion-avatar>
   <div>
     <ion-text class="ion-block ion-text-large ion-font-bold text-name">{{ user.name }}</ion-text>
-    <ion-text class="ion-block ion-text-light">{{ user.institue.name }}</ion-text>
+    <ion-text class="ion-block ion-text-light">{{ user.institute.name }}</ion-text>
     <ion-text class="ion-block ion-text-small ion-margin-top-vertical-half" *ngIf="user.mutualFriends > 0"
       color="primary">{{ user.mutualFriends }} mutual friends</ion-text>
   </div>

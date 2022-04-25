@@ -247,6 +247,40 @@ ion-button {
 }
 // #endregion
 
+// #region | Back Button |
+ion-back-button {
+    --icon-font-size: 24px;
+    --icon-padding-end: 8px;
+}
+// #endregion
+
+// #region | Searchbar |
+ion-searchbar {
+    .searchbar-input-container {
+        $size: 15px;
+        $margin: 10px;
+        $margin-right: 13px;
+
+        .searchbar-search-icon {
+            width: $size;
+            height: $size;
+            margin: $margin !important;
+            margin-right: $margin-right !important;
+            font-size: 14px;
+            font-weight: 300;
+            
+            // &::-webkit-input-placeholder, &::placeholder {
+            //     color: #000;
+            // }
+        }
+
+        .searchbar-input {
+            padding-inline-start: $margin + $size + $margin-right !important;
+        }
+    }
+}
+// #endregion
+
 // #region |  |
 // #endregion
 

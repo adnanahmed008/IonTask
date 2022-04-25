@@ -5,6 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { RecentSearchesComponent } from './recent-searches/recent-searches.component';
 import { PeopleSuggestionComponent } from './people-suggestion/people-suggestion.component';
 import { SuggestedUserItemComponent } from './suggested-user-item/suggested-user-item.component';
+import { BestCoursesComponent } from './best-courses/best-courses.component';
+import { CourseItemComponent } from './course-item/course-item.component';
 
 
 
@@ -13,7 +15,9 @@ import { SuggestedUserItemComponent } from './suggested-user-item/suggested-user
     GeneralCategoriesComponent,
     RecentSearchesComponent,
     PeopleSuggestionComponent,
-    SuggestedUserItemComponent
+    SuggestedUserItemComponent,
+    BestCoursesComponent,
+    CourseItemComponent
   ],
   imports: [
     CommonModule
@@ -23,7 +27,9 @@ import { SuggestedUserItemComponent } from './suggested-user-item/suggested-user
     GeneralCategoriesComponent,
     RecentSearchesComponent,
     PeopleSuggestionComponent,
-    SuggestedUserItemComponent
+    SuggestedUserItemComponent,
+    BestCoursesComponent,
+    CourseItemComponent
   ]
 })
 export class ComponentsModule { }

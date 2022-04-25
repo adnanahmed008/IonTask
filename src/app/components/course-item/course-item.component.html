@@ -1,0 +1,12 @@
+<ion-item class="ion-no-padding ion-reset-height ion-no-padding-end item-course ion-align-items-center" button="true" detail="false"
+  [lines]="lines">
+
+  <ion-avatar slot="start">
+    <ion-img [src]="course.picture"></ion-img>
+  </ion-avatar>
+  <div>
+    <ion-text class="ion-block ion-text-normal ion-font-bold text-name">{{ course.name }}</ion-text>
+    <ion-text class="ion-block ion-text-light ion-font-light">{{ course.institute.name }}</ion-text>
+  </div>
+
+</ion-item>
