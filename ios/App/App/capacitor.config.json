@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "IonTask",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
