@@ -1,8 +1,4 @@
 :host {
-    ion-card {
-        --background: #fff;
-    }
-
     .item-search {
         ion-avatar {
             width: 23px;
@@ -13,6 +9,14 @@
             .icon-search {
                 font-size: 12px;
             }
+        }
+
+        .text-institution-name {
+            margin-bottom: 6px;
+        }
+
+        &:last-of-type {
+            margin-bottom: unset;
         }
     }
 }

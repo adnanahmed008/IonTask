@@ -23,6 +23,7 @@ export class UserStoreService {
       new User()
         .setName("Rick Novak")
         .setInstitute(this.srvInstitutes.get()[1])
+        .setMutualFrients(8)
         .setProfilePicture("assets/images/user-thumbnail-2.jpeg")
     );
 

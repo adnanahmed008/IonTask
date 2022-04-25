@@ -1,9 +1,10 @@
 import { Institute } from "./institute";
 
 export class User {
-    private name: string;
-    private institue: Institute;
-    private profilePicture: string;
+    name: string;
+    institue: Institute;
+    profilePicture: string;
+    mutualFriends: number;
 
     setName(name: string) {
         this.name = name;
@@ -20,15 +21,8 @@ export class User {
         return this;
     }
 
-    getName() {
-        return this.name;
-    }
-
-    getInstitute() {
-        return this.institue;
-    }
-
-    getProfilePicture() {
-        return this.profilePicture;
+    setMutualFrients(count: number) {
+        this.mutualFriends = count;
+        return this;
     }
 }

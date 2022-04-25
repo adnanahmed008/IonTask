@@ -1,8 +1,8 @@
-<ion-card class="ion-no-margin ion-no-border-radius ion-standard-padding">
+<ion-card class="ion-no-margin ion-no-border-radius ion-padding">
 
     <ion-card-header class="ion-no-padding">
-        <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end ion-margin-bottom-vertical-half" lines="none"
-            detail="false">
+        <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end ion-margin-bottom-vertical-half"
+            lines="none" detail="false">
             <h6 class="ion-card-heading">Recent searches</h6>
             <ion-button class="ion-no-margin ion-no-padding ion-reset-height" slot="end" color="transparent">
                 <ion-text color="primary">Clear</ion-text>
@@ -13,8 +13,9 @@
     <ion-card-content class="ion-no-padding">
         <ion-list lines="none">
 
-            <ion-item class="ion-no-padding ion-reset-height  ion-no-padding-end item-search ion-margin-bottom-vertical-half"
-                *ngFor="let search of searches">
+            <ion-item
+                class="ion-no-padding ion-reset-height  ion-no-padding-end item-search ion-margin-bottom-vertical-half"
+                *ngFor="let search of searches" button="true" detail="false">
 
                 <!-- Search Type: Text -->
                 <ng-container *ngIf="search.type == ESearchType.TEXT">
@@ -27,19 +28,22 @@
                 <!-- Search Type: User -->
                 <ng-container *ngIf="search.type == ESearchType.USER">
                     <ion-avatar class="ion-flex ion-align-items-center ion-justify-content-center" slot="start">
-                        <ion-img [src]="search.user.getProfilePicture()"></ion-img>
+                        <ion-img [src]="search.user.profilePicture"></ion-img>
                     </ion-avatar>
-                    <ion-text class="ion-text-normal">{{ search.user.getName() }}</ion-text>
+                    <ion-text class="ion-text-normal">{{ search.user.name }}</ion-text>
                 </ng-container>
 
                 <!-- Search Type: Institute -->
                 <ng-container *ngIf="search.type == ESearchType.INSTITUTE">
                     <ion-avatar class="ion-flex ion-align-items-center ion-justify-content-center" slot="start">
-                        <ion-img [src]="search.institute.getThumbnail()"></ion-img>
+                        <ion-img [src]="search.institute.thumbnail"></ion-img>
                     </ion-avatar>
                     <div>
-                        <ion-text class="ion-block ion-text-normal ion-margin-bottom-half">{{ search.institute.getName() }}</ion-text>
-                        <ion-text class="ion-block ion-text-light ion-font-light" color="gray-700">Institution</ion-text>
+                        <ion-text class="ion-block ion-text-normal text-institution-name">
+                            {{ search.institute.name }}
+                        </ion-text>
+                        <ion-text class="ion-block ion-text-light ion-font-light" color="gray-700">Institution
+                        </ion-text>
                     </div>
                 </ng-container>
 

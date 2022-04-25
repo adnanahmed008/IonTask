@@ -1,0 +1,43 @@
+<ion-card class="ion-no-margin ion-no-border-radius ion-padding">
+
+  <ion-card-header class="ion-no-padding">
+    <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end" lines="none" detail="false">
+      <h6 class="ion-card-heading">People you may know</h6>
+    </ion-item>
+  </ion-card-header>
+
+  <ion-card-content class="ion-no-padding">
+    <ion-list class="ion-border-bottom">
+
+      <ion-item class="ion-no-padding ion-reset-height ion-no-padding-end item-suggestion" part="native" button="true" detail="false"
+        *ngFor="let user of users; index as i" [attr.lines]="i == users.length - 1 ? 'full' : 'inset'">
+
+        <ion-avatar class="ion-align-self-start ion-flex ion-align-items-center ion-justify-content-center"
+          slot="start">
+          <ion-img [src]="user.profilePicture"></ion-img>
+        </ion-avatar>
+        <div>
+          <ion-text class="ion-block ion-text-large iosn-font-bold text-name">{{ user.name }}</ion-text>
+          <ion-text class="ion-block ion-text-light">{{ user.institue.name }}</ion-text>
+          <ion-text class="ion-block ion-text-small ion-margin-top-vertical-half" *ngIf="user.mutualFriends > 0"
+            color="primary">{{ user.mutualFriends }} mutual friends</ion-text>
+        </div>
+
+        <ion-button class="ion-no-margin ion-reset-height" slot="end" color="transparent" part="native">
+          <ion-icon class="icon-add-user" slot="icon-only" color="primary" src="../../../assets/icon/icon-add-user.svg">
+          </ion-icon>
+        </ion-button>
+
+      </ion-item>
+
+    </ion-list>
+
+    <div class="btn-see-more ion-flex ion-align-items-center ion-justify-content-center">
+      <ion-button class="ion-no-margin ion-padding-top ion-reset-height" color="transparent">
+        <ion-text class="ion-text-light" color="primary">See more</ion-text>
+      </ion-button>
+    </div>
+
+  </ion-card-content>
+
+</ion-card>
