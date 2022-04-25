@@ -1,8 +1,8 @@
-<ion-header class="box-shadow">
+<ion-header class="ion-box-shadow">
 
   <!-- Search Toolbar -->
   <ion-toolbar class="ion-no-padding">
-    <ion-buttons slot="start">
+    <ion-buttons slot="start" class="ion-margin-start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
@@ -10,11 +10,14 @@
   </ion-toolbar>
 
   <!-- Categories Toolbar -->
-  <ion-toolbar class="ion-no-padding reset-height">
+  <ion-toolbar class="ion-no-padding ion-reset-height">
     <app-general-categories></app-general-categories>
   </ion-toolbar>
 
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding-top">
+
+  <app-recent-searches></app-recent-searches>
+
 </ion-content>

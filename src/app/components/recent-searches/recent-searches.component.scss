@@ -1,0 +1,18 @@
+:host {
+    ion-card {
+        --background: #fff;
+    }
+
+    .item-search {
+        ion-avatar {
+            width: 23px;
+            height: 23px;
+            margin: unset;
+            margin-right: var(--ion-padding-vertical-half);
+
+            .icon-search {
+                font-size: 12px;
+            }
+        }
+    }
+}

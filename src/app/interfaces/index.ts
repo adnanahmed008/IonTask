@@ -1,0 +1,1 @@
+export { IRecentSearch } from "./irecent-search";

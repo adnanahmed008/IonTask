@@ -5,5 +5,9 @@
         margin: unset;
         margin-right: var(--ion-padding-vertical-half);
         border-color: var(--ion-color-gray-400);
+
+        &:last-of-type {
+            margin-right: unset;
+        }
     }
 }
